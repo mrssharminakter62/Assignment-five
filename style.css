@@ -1,5 +1,5 @@
 .container{
-    background-color: yellow;
+    background-color: #ffc400;
     width: 100%;
     height: 1000px;
 
@@ -7,4 +7,9 @@
 .style-button{
     background-color: darkblue;
     color: white;
+}
+.form-style{
+    float: right;
+    padding-right: 50px;
+    padding-top: 50px;
 }

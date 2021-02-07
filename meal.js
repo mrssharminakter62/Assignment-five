@@ -1,13 +1,13 @@
-fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+ fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
 .then(res => res.json())
-.then(data => displayFoods(data));
+.then(data => displayFoods(data.foods));
 
  
         const displayFoods = foods =>{
+            
         const foodsDiv = document.getElementById('foods');
            
-        foods.forEach(food => console.log(food)
-    
+        foods.forEach(meal => {
         const foodDiv = document.createElement('div');
         foodDiv.className = 'food';
 
@@ -18,5 +18,8 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
 
         foodDiv.innerHTML =foodInfo;
         foodsDiv.appendChild(foodDiv);
-    );
+   });
 }
+         
+     
+})
